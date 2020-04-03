@@ -1,0 +1,65 @@
+.underLine{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.fileNameColor{
+  color: #333;
+}
+
+.actionTab{
+  display: inline-block;
+  float: right;
+  span:hover{
+    cursor: pointer;
+  }
+}
+
+.actionLabel{
+  color: #40A4FF;
+
+}
+
+.pictureCardDiv{
+  float: left;
+  width: 104px;
+  height: 104px;
+  line-height: 96px;
+  text-align: center;
+  margin: 0 8px 8px 0;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .imgBorder {
+    height: 88px;
+    width: 88px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.pictureCardMask{
+  position: absolute;
+  z-index: 1;
+  width: 88px;
+  height: 88px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  content: ' ';
+  :global {
+    .ant-btn-link {
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .ant-btn-link:hover {
+      color: #B5DBFF;
+      font-weight: bolder;
+    }
+  }
+}

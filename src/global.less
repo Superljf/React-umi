@@ -1,0 +1,94 @@
+@import '~antd/lib/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+// 全局设置表单宽度
+.ant-descriptions.bordered .ant-descriptions-item-label, .ant-descriptions.bordered .ant-descriptions-item-content{
+  width: 25%;
+}
+// 全局设置下拉菜单文字居中
+.ant-dropdown-menu-item > a, .ant-dropdown-menu-submenu-title > a{
+  text-align: center;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.customIcon{
+  width: 1.2em; height: 1.2em;
+  overflow: hidden;
+  vertical-align: -0.15em;
+  fill: currentColor;
+}
+
+.noticeTabColor .ant-tabs-tab{
+  color: #333;
+  background-color: #CCC;
+}
+
+.pointerSpan{
+  color: #5480DB;
+}
+
+.pointerSpan:hover{
+  cursor: pointer;
+}
+
+.orangeBtn{
+  color: #FFF;
+  background-color: #F90;
+  border: 1px solid #F90;
+}
+
+.orangeBtn:hover{
+  color: #FFF;
+  background-color: #F90;
+  border: 1px solid #F90;
+}
+
